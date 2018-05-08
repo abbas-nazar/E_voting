@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True" SettingsObjectName="WpfApplicationProject.Properties.Settings" SettingsPropertyName="DatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Area" Member="Areas">
+    <Type Name="Area">
+      <Column Name="AID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Area" Member="Area1" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Area_Canditate" Member="Canditates" ThisKey="AID" OtherKey="AID" Type="Canditate" />
+      <Association Name="Area_Voter" Member="Voters" ThisKey="AID" OtherKey="AID" Type="Voter" />
+      <Association Name="Area_Vote" Member="Votes" ThisKey="AID" OtherKey="AID" Type="Vote" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Canditate" Member="Canditates">
+    <Type Name="Canditate">
+      <Column Name="CID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CNIC" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Party" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Education" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="AID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Area_Canditate" Member="Area" ThisKey="AID" OtherKey="AID" Type="Area" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Voter" Member="Voters">
+    <Type Name="Voter">
+      <Column Name="VID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CNIC" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ocupation" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Education" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Vote" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Voter_Vote" Member="Vote1" ThisKey="VID" OtherKey="VID" Type="Vote" Cardinality="One" />
+      <Association Name="Area_Voter" Member="Area" ThisKey="AID" OtherKey="AID" Type="Area" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Votes" Member="Votes">
+    <Type Name="Vote">
+      <Column Name="VID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Party" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Area_Vote" Member="Area" ThisKey="AID" OtherKey="AID" Type="Area" IsForeignKey="true" />
+      <Association Name="Voter_Vote" Member="Voter" ThisKey="VID" OtherKey="VID" Type="Voter" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

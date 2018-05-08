@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApplicationProject.AddCandidate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationProject"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="AddCandidate" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid Background="#E9EBEE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="563*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <materialDesign:Card Padding="32" Margin="16,16,16.4,0">
+
+            <StackPanel>
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackPanel Grid.Column="0">
+                        <Label Name="fnlabel" Content="Firstname:"/>
+                        <Label Name="lnlabel" Content="Lastname:"/>
+                        <Label Name="cniclabel" Content="CNIC:"/>
+                        <Label Name="partylabel" Content="Party:"/>
+                        <Label Name="agelabel" Content="Age:"/>
+                        <Label Name="educationlabel" Content="Education:"/>
+                        <Label Name="genderlabel" Content="Gender:"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBox Name="fntext"  Width="90" />
+                        <TextBox Name="lntext" Width="90"/>
+                        <TextBox Name="cnictext" Width="90" />
+                        <TextBox Name="partytext" Width="90"/>
+                        <TextBox Name="agetext"  Width="90"/>
+                        <TextBox Name="educationtext" Width="90"/>
+                        <TextBox Name="gendertext" Width="90"/>
+                    </StackPanel>
+
+
+
+                </Grid>
+
+
+
+            </StackPanel>
+            </materialDesign:Card>
+
+            <StackPanel >
+                <Button Name="submitbtn" Content="Submit" Margin="20" Width="317" Click="submitbtn_Click"/>
+                <Button Name="backbtn" Content="Back" Margin="20" Width="317" Click="backbtn_Click"/>
+                <Button Name="listbtn" Content="List ALl Candidates" Margin="20" Width="317" Click="listbtn_Click"/>
+
+            </StackPanel>
+        </StackPanel>
+        
+
+       
+        
+        <StackPanel Grid.ColumnSpan="2" Margin="378,0,-0.4,0.4" Grid.RowSpan="2" >
+            <DataGrid Name="areadg" IsReadOnly="True"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="0e84d3ad-a0a6-46f5-aba8-8dbc5afb8bc0" absoluteBounds="0.75, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClasses1DataContext/Area" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d352a39-36f8-45c3-b728-08175166ff72" absoluteBounds="0.765, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="758a2c74-00e8-42af-9fbb-6d161b3edda4" absoluteBounds="3.5, 1.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClasses1DataContext/Canditate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92b78b2a-44a5-454f-be26-dffd48bc381e" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1fea1c2-f417-4394-9ba5-9cf07d45db07" absoluteBounds="3.5, 4.375, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DataClasses1DataContext/Voter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63977912-c76c-4ab4-b8c5-dfe2cc18fbef" absoluteBounds="3.515, 4.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="066e7a4b-734b-4409-b7c6-289240436e23" absoluteBounds="6.25, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DataClasses1DataContext/Vote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54901831-b6cc-4796-b983-c15178c78027" absoluteBounds="6.265, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 3.5); (1.75 : 2.3124995); (3.5 : 2.3124995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Area/Area_Canditate" />
+      <nodes>
+        <classShapeMoniker Id="0e84d3ad-a0a6-46f5-aba8-8dbc5afb8bc0" />
+        <classShapeMoniker Id="758a2c74-00e8-42af-9fbb-6d161b3edda4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.72679768880208); (3.5 : 4.72679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Area/Area_Voter" />
+      <nodes>
+        <classShapeMoniker Id="0e84d3ad-a0a6-46f5-aba8-8dbc5afb8bc0" />
+        <classShapeMoniker Id="d1fea1c2-f417-4394-9ba5-9cf07d45db07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.02005126953125); (7.25 : 4.02005126953125); (7.25 : 4.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Area/Area_Vote" />
+      <nodes>
+        <classShapeMoniker Id="0e84d3ad-a0a6-46f5-aba8-8dbc5afb8bc0" />
+        <classShapeMoniker Id="066e7a4b-734b-4409-b7c6-289240436e23" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.44314697265625); (6.25 : 5.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Voter/Voter_Vote" />
+      <nodes>
+        <classShapeMoniker Id="d1fea1c2-f417-4394-9ba5-9cf07d45db07" />
+        <classShapeMoniker Id="066e7a4b-734b-4409-b7c6-289240436e23" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

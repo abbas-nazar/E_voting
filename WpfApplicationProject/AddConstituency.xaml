@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApplicationProject.AddConstituency"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationProject"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="AddConstituency" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <StackPanel >
+            <materialDesign:Card Padding="32" Margin="16">
+                <StackPanel  >
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <StackPanel Grid.Column="0">
+                            <Label Name="provincelabel" Content="Province:"/>
+                            <Label Name="citylabel" Content="City:"/>
+                            <Label Name="areacodelabel" Content="Constituency:"/> 
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBox Name="provtext"  Width="90" />
+                            <TextBox Name="citytext" Width="90"/>
+                            <TextBox Name="areacodetext" Width="90" />
+                        </StackPanel>
+
+                    </Grid>
+
+                </StackPanel>
+            </materialDesign:Card>
+            <StackPanel >
+                <Button Name="submitbtn" Content="Submit" Margin="20" Width="317" Click="submitbtn_Click"/>
+                <Button Name="backbtn" Content="Back" Margin="20" Width="317" Click="backbtn_Click"/>
+                <Button Name="listbtn" Content="List all areas" Margin="20" Width="317" Click="listbtn_Click" />
+                </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplicationProject.ListCandidates"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationProject"
+        mc:Ignorable="d"
+        Title="ListCandidates" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <StackPanel>
+            <Button Name="backbtn" Content="Back" Click="backbtn_Click"/>
+            <DataGrid Name="areadg" IsReadOnly="True"/>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
+
