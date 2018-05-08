@@ -55,3 +55,12 @@ C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListAreas.baml
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListCandidates.g.cs
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListCandidates.baml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Twilio.dll
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Twilio.xml

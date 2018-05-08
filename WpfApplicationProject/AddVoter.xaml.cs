@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace WpfApplicationProject
 {
@@ -48,7 +51,7 @@ namespace WpfApplicationProject
             this.Close();
         }
 
-        private void submitbtn_Click(object sender, RoutedEventArgs e)
+        private async void submitbtn_Click(object sender, RoutedEventArgs e)
         {
             var res = (Area)areadg.SelectedItem;
 
@@ -65,16 +68,48 @@ namespace WpfApplicationProject
                 Vote="no",
                 AID = res.AID
             };
+            string p = res.Area1;
 
             dc.Voters.InsertOnSubmit(V);
             dc.SubmitChanges();
-         }
+
+            pbStatus.Visibility = System.Windows.Visibility.Visible;
+            pbStatus.IsIndeterminate = true;
+            int a = await message(V.Phone, p);
+            pbStatus.IsIndeterminate = false;
+            pbStatus.Visibility= System.Windows.Visibility.Hidden;
+
+
+
+
+        }
 
         private void listbtn_Click(object sender, RoutedEventArgs e)
         {
             ListVoters wp = new ListVoters();
             wp.Show();
             this.Close();
+        }
+
+        public async Task<int> message(string n,string p)
+        {
+            try
+            {
+                TwilioClient.Init(
+                    "AC0275b57e81b23fff88700a0c326c5565",
+                    "3858cce993376eef12e45f603de25be7");
+
+                MessageResource.Create(
+        to: new PhoneNumber(n),
+        from: new PhoneNumber("+15412755684"),
+        body: "Your Vote has been registered at "+p);
+                return 0;
+            }
+            catch(Exception e)
+            {
+                return 0;
+            }
+            
         }
     }
 }

@@ -58,11 +58,15 @@
                 </Grid>
 
             </StackPanel>
+                
         </materialDesign:Card>
+            
         <StackPanel >
+            
             <Button Name="submitbtn" Content="Submit" Margin="20" Width="317" Click="submitbtn_Click"/>
             <Button Name="backbtn" Content="Back" Margin="20" Width="317" Click="backbtn_Click"/>
             <Button Name="listbtn" Content="List Voters" Margin="20" Width="317" Click="listbtn_Click"/>
+          
 
         </StackPanel>
         </StackPanel>
@@ -72,6 +76,6 @@
 
         </StackPanel>
 
-
+        <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" IsIndeterminate="False" Visibility="Hidden" />
     </Grid>
 </Window>
