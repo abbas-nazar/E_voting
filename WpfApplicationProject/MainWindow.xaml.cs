@@ -31,5 +31,13 @@ namespace WpfApplicationProject
             wp.Show();
             this.Close();
         }
+
+        private void votebtn_Click(object sender, RoutedEventArgs e)
+        {
+            VoteF v = new VoteF();
+            v.Show();
+            this.Close();
+
+        }
     }
 }

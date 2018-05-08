@@ -24,6 +24,7 @@
             <Button Margin="10" Name="goconstituencybtn" Content="Create A Contituency" Click="goconstituencybtn_Click"/>
             <Button Margin="10" Name="goVoterbtn" Content="Add A Voter" Click="goVoterbtn_Click" />
             <Button Margin="10" Name="gocandidatebtn" Content="Create A Candidate" Click="gocandidatebtn_Click" />
+                <Button Margin="10" Name="stats" Content="Stats" Click="stats_Click"  />
         </StackPanel>
         </materialDesign:Card>
 

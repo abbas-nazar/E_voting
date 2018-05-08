@@ -64,3 +64,7 @@ C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Twilio.xml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VoteF.g.cs
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VoteF.baml
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.g.cs
+C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.baml

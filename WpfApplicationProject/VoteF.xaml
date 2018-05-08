@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApplicationProject.VoteF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationProject"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="VoteF" Height="400" Width="400">
+    <Grid>
+
+        <materialDesign:Card Padding="32" Margin="16">
+            <StackPanel  >
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <StackPanel Grid.Column="0">
+                        <Label Name="VID" Content="Voter ID:"/>
+                        <Label Name="cnic" Content="CNIC:"/>
+                        <Label Name="no" Content="Phone No:"/>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBox Name="vID"  Width="90" />
+                        <TextBox Name="CNIC" Width="90"/>
+                        <TextBox Name="Phone_No" Width="90" />
+
+
+                    </StackPanel>
+
+                </Grid>
+
+            </StackPanel>
+
+        </materialDesign:Card>
+
+        <Button Name="submitbtn" Content="Submit" Margin="34,209,36.6,0" Click="submitbtn_Click" Height="32" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

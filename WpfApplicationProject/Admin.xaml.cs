@@ -44,5 +44,10 @@ namespace WpfApplicationProject
             wp.Show();
             this.Close();
         }
+
+        private void stats_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

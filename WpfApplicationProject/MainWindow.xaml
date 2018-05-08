@@ -27,7 +27,7 @@
             <StackPanel>
                 <Button Margin="10" Name="adminbtn" Content="Admin" Click="adminbtn_Click"/>
                 
-                <Button Margin="10" Name="votebtn" Content="Vote"/>
+                <Button Margin="10" Name="votebtn" Content="Vote" Click="votebtn_Click"/>
 
         </StackPanel>
         </materialDesign:Card>

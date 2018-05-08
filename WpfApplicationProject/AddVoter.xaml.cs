@@ -69,13 +69,21 @@ namespace WpfApplicationProject
                 AID = res.AID
             };
             string p = res.Area1;
-
+            string c = res.City;
+            int vid=0;
             dc.Voters.InsertOnSubmit(V);
             dc.SubmitChanges();
 
+            var res1 = from q in dc.Voters where q.CNIC==V.CNIC select new { VID = q.VID };
+
+            foreach(var r in res1)
+            {
+                vid = r.VID;
+            }
+
             pbStatus.Visibility = System.Windows.Visibility.Visible;
             pbStatus.IsIndeterminate = true;
-            int a = await message(V.Phone, p);
+            int a = await message(V.Phone, p,c,vid);
             pbStatus.IsIndeterminate = false;
             pbStatus.Visibility= System.Windows.Visibility.Hidden;
 
@@ -91,7 +99,7 @@ namespace WpfApplicationProject
             this.Close();
         }
 
-        public async Task<int> message(string n,string p)
+        public async Task<int> message(string n,string p,string c,int vid)
         {
             try
             {
@@ -102,7 +110,7 @@ namespace WpfApplicationProject
                 MessageResource.Create(
         to: new PhoneNumber(n),
         from: new PhoneNumber("+15412755684"),
-        body: "Your Vote has been registered at "+p);
+        body: "Your Vote has been registered at "+p+" "+c+"  your Vote ID is "+ vid);
                 return 0;
             }
             catch(Exception e)
