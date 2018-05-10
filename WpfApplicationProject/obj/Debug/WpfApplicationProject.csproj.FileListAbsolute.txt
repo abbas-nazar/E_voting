@@ -16,8 +16,6 @@ c:\users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfAppl
 c:\users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\AddVoter.baml
 c:\users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\AddCandidate.g.cs
 c:\users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\AddCandidate.baml
-C:\Users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\VotingDB.mdf
-C:\Users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\VotingDB_log.ldf
 C:\Users\123\documents\visual studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\WpfApplicationProject_Content.g.cs
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\WpfApplicationProject.exe.config
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\WpfApplicationProject.exe
@@ -68,3 +66,35 @@ C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VoteF.baml
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.g.cs
 C:\Users\Abbas Nazar\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Database.mdf
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Database_log.ldf
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\MaterialDesignColors.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Twilio.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\bin\Debug\Twilio.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\AddConstituency.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\Admin.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListAreas.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListCandidates.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListVoters.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VoteF.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\App.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\AddConstituency.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\Admin.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListAreas.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListCandidates.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\ListVoters.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VoteF.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\VotePannel.baml
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\Stats.g.cs
+C:\Users\123\Documents\Visual Studio 2015\Projects\WpfApplicationProject\WpfApplicationProject\obj\Debug\Stats.baml

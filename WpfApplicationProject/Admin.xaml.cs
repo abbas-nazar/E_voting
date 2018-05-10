@@ -47,7 +47,9 @@ namespace WpfApplicationProject
 
         private void stats_Click(object sender, RoutedEventArgs e)
         {
-
+            Stats wp = new Stats();
+            wp.Show();
+            this.Close();
         }
     }
 }

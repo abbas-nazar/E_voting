@@ -51,20 +51,47 @@ namespace WpfApplicationProject
         {
             var res = (Area)areadg.SelectedItem;
 
-            Canditate V = new Canditate()
-            {
-                First_Name=fntext.Text,
-                Last_Name=lntext.Text,
-                Gender=gendertext.Text,
-                Age=agetext.Text,
-                Education=educationtext.Text,
-                CNIC=cnictext.Text,
-                Party=partytext.Text,                
-                AID = res.AID
-            };
 
-            dc.Canditates.InsertOnSubmit(V);
-            dc.SubmitChanges();
+            if (fntext.Text == "" || lntext.Text == "" || gendertext.Text == ""
+                ||agetext.Text==""||educationtext.Text==""||cnictext.Text==""
+                ||partytext.Text=="")
+            {
+                // MessageBox.Show("Good","Alert", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+
+                MessageBox.Show("Please fill all of the fields");
+            }
+
+            if (res == null)
+            {
+
+                MessageBox.Show("Please select your area");
+
+            }
+            else
+            {
+                Canditate V = new Canditate()
+                {
+                    First_Name = fntext.Text,
+                    Last_Name = lntext.Text,
+                    Gender = gendertext.Text,
+                    Age = agetext.Text,
+                    Education = educationtext.Text,
+                    CNIC = cnictext.Text,
+                    Party = partytext.Text,
+                    AID = res.AID
+                };
+
+                dc.Canditates.InsertOnSubmit(V);
+                dc.SubmitChanges();
+                MessageBox.Show("Succesfully Added");
+                fntext.Text = "";
+                lntext.Text = "";
+                gendertext.Text = "";
+                agetext.Text = "";
+                educationtext.Text = "";
+                cnictext.Text = "";
+                partytext.Text = "";
+            }
         }
 
         private void listbtn_Click(object sender, RoutedEventArgs e)

@@ -46,7 +46,7 @@ namespace WpfApplicationProject
                 AID=a,
                 VID=b
             };
-            var r = from q in dc.Voters where q.VID == v.AID select q;
+            var r = from q in dc.Voters where q.VID == v.VID select q;
             foreach(var re in r)
             {
                 re.Vote = "yes";

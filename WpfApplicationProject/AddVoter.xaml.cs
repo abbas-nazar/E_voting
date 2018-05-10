@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -54,41 +55,74 @@ namespace WpfApplicationProject
         private async void submitbtn_Click(object sender, RoutedEventArgs e)
         {
             var res = (Area)areadg.SelectedItem;
-
-            Voter V = new Voter()
+            if (fntext.Text == "" || lntext.Text == "" || gendertext.Text == ""
+               || agetext.Text == "" || phonetext.Text == "" || edutext.Text == ""
+               || occtext.Text == "" || cnictext.Text=="")
             {
-                First_Name = fntext.Text,
-                Last_Name = lntext.Text,
-                CNIC = cnictext.Text,
-                Age = agetext.Text,
-                Phone = phonetext.Text,
-                Ocupation = occtext.Text,
-                Education = edutext.Text,
-                Gender = gendertext.Text,
-                Vote="no",
-                AID = res.AID
-            };
-            string p = res.Area1;
-            string c = res.City;
-            int vid=0;
-            dc.Voters.InsertOnSubmit(V);
-            dc.SubmitChanges();
+                // MessageBox.Show("Good","Alert", MessageBoxButton.OKCancel, MessageBoxImage.Error);
 
-            var res1 = from q in dc.Voters where q.CNIC==V.CNIC select new { VID = q.VID };
-
-            foreach(var r in res1)
-            {
-                vid = r.VID;
+                MessageBox.Show("Please fill all of the fields");
             }
 
-            pbStatus.Visibility = System.Windows.Visibility.Visible;
-            pbStatus.IsIndeterminate = true;
-            int a = await message(V.Phone, p,c,vid);
-            pbStatus.IsIndeterminate = false;
-            pbStatus.Visibility= System.Windows.Visibility.Hidden;
+            if (res == null)
+            {
+
+                MessageBox.Show("Please select your area");
+
+            }
+
+            else
+            {
+
+                Voter V = new Voter()
+                {
+                    First_Name = fntext.Text,
+                    Last_Name = lntext.Text,
+                    CNIC = cnictext.Text,
+                    Age = agetext.Text,
+                    Phone = phonetext.Text,
+                    Ocupation = occtext.Text,
+                    Gender = gendertext.Text,
+                    Vote = "no",
+                    AID = res.AID
+                };
+                string p = res.Area1;
+                string c = res.City;
+                int vid = 0;
+                dc.Voters.InsertOnSubmit(V);
+                dc.SubmitChanges();
+
+                var res1 = from q in dc.Voters where q.CNIC == V.CNIC select new { VID = q.VID };
+
+                foreach (var r in res1)
+                {
+                    vid = r.VID;
+                }
 
 
+                //pbStatus.Visibility = Visibility.Visible;
+                //pbStatus.IsIndeterminate = true;
+                int a = await message(V.Phone, p, c, vid);
+               
+                // pbStatus.IsIndeterminate = false;
 
+
+                //pbStatus.Visibility = Visibility.Hidden;
+
+                MessageBox.Show("Succesfully Added");
+               
+                fntext.Text = "";
+                lntext.Text = "";
+                gendertext.Text = "";
+                agetext.Text = "";
+                edutext.Text = "";
+                cnictext.Text = "";
+                occtext.Text = "";
+                phonetext.Text = "";
+               
+
+
+            }
 
         }
 
@@ -103,6 +137,8 @@ namespace WpfApplicationProject
         {
             try
             {
+
+                
                 TwilioClient.Init(
                     "AC0275b57e81b23fff88700a0c326c5565",
                     "3858cce993376eef12e45f603de25be7");

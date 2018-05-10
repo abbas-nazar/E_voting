@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApplicationProject.Stats"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationProject"
+        mc:Ignorable="d"
+        
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="Stats" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <Button Content="Back" Click="Button_Click"/>
+            <WrapPanel> 
+                <Label Content="Registered Voters:"/>
+            <Label Name="totalvoters"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Label Content="Voter turnout:"/>
+                <Label Name="votedvoters"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Label Content="Male Voters:"/>
+                <Label Name="malevoters"/>
+            </WrapPanel>
+            
+            <WrapPanel>
+                <Label Content="Female Voters:"/>
+                <Label Name="femalevoters"/>
+               </WrapPanel>
+            <WrapPanel>
+                <Label Content="Educated Voters:"/>
+                <Label Name="eduvoters"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Label Content="Non-Educated Voters:"/>
+                <Label Name="noneduvoters"/>
+            </WrapPanel>
+
+            <DataGrid Name="areadg" IsReadOnly="True"/>
+            <Button Content="Statistics of a selected Constituency" Click="Button_Click_1"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -15,7 +15,7 @@
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
         
-        Title="VotePannel" Height="400" Width="600">
+        Title="VotePannel" Height="600" Width="700" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel>
             <Button Name="vte" Content="Vote" Click="vte_Click" />

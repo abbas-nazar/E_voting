@@ -35,15 +35,29 @@ namespace WpfApplicationProject
         private void submitbtn_Click(object sender, RoutedEventArgs e)
         {
 
-            Area a = new Area()
+            if (provtext.Text == "" || citytext.Text == "" || areacodetext.Text == "")
             {
-                Province = provtext.Text,
-                City = citytext.Text,
-                Area1 = areacodetext.Text
-            };
-          
-            dc.Areas.InsertOnSubmit(a);
-            dc.SubmitChanges();
+                // MessageBox.Show("Good","Alert", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+
+                MessageBox.Show( "Please Fill all of the fields");
+            }
+
+            else
+            {
+                Area a = new Area()
+                {
+                    Province = provtext.Text,
+                    City = citytext.Text,
+                    Area1 = areacodetext.Text
+                };
+                
+                dc.Areas.InsertOnSubmit(a);
+                dc.SubmitChanges();
+                MessageBox.Show("Area has been added successfully");
+                provtext.Text = "";
+                citytext.Text = "";
+                areacodetext.Text = "";
+            }
         }
 
         private void listbtn_Click(object sender, RoutedEventArgs e)
