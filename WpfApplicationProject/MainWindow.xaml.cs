@@ -27,7 +27,7 @@ namespace WpfApplicationProject
 
         private void adminbtn_Click(object sender, RoutedEventArgs e)
         {
-            Admin wp = new Admin();
+            adminLogin wp = new adminLogin();
             wp.Show();
             this.Close();
         }
